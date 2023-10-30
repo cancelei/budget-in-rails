@@ -1,0 +1,20 @@
+<!-- app/views/categories/index.html.erb -->
+
+<div class="bg-gray-100 min-h-screen p-6">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Categories</h2>
+
+    <% @categories.each do |category| %>
+      <%= link_to category_path(category) do %>
+        <div class="flex justify-between items-center border-b pb-4 mb-4">
+          <div>
+            <i class="material-icons"><%= category.icon %></i>            <%= category.name %>
+          </div>
+          <span>Total: $<%= category.operations.sum(:amount) %></span>
+        </div>
+      <% end %>
+    <% end %>
+
+    <%= link_to "Add a new category", new_category_path, class: "block w-full p-2 text-center bg-blue-600 text-white rounded-md hover:bg-blue-700 mt-4" %>
+  </div>
+</div>
