@@ -4,9 +4,17 @@
   <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
     <h2 class="text-2xl font-semibold mb-6 text-center"><%= @category.name %></h2>
 
-    <h3 class="text-xl mb-4">Operations:</h3>
+    <h3 class="text-xl mb-4">Operations</h3>
+
+    <div class="flex justify-between items-center border-b pb-4 mb-4">
+      <div>
+        <strong>Total:</strong>
+      </div>
+      <span><strong>$<%= @operations.sum(:amount) %></strong></span>
+    </div>
 
     <% @operations.each do |operation| %>
+
       <div class="flex justify-between items-center border-b pb-4 mb-4">
         <div>
           <%= operation.name %>
