@@ -32,7 +32,7 @@
 
 # 📖 budget App <a name="about-project"></a>
 
-**budget in Rails App** empowers the end-users to start a new budget-post, comment and like existing content.
+**budget in Rails App** empowers the end-users to start a new budget tracking account, where he can create categories and operations and see those data linked.
 
 ## 🛠 Built With <a name="built-with"></a>
 
