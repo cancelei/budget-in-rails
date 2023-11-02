@@ -26,3 +26,7 @@ node_modules/
 
 .byebug_history
 .env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
