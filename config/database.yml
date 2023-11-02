@@ -15,4 +15,5 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['postgres://postgresql_3q2i_user:cEKQgQpwzPNyV1bYeuI5MldIWjb8OgFi@dpg-cl22fo0310os73e1274g-a/postgresql_3q2i'] %>
   database: myapp_production
