@@ -32,7 +32,11 @@
 
 # 📖 budget App <a name="about-project"></a>
 
-**Budget in Rails App** empowers the end-users to start a new budget tracking account, where he can create categories and operations and see those data linked.
+**Budget in Rails App** empowers the end-users to start a new budget tracking account, where he can create categories and operations associated with the chosen category. In my app you dont need to choose the category every time you want to register an operation, you select the category and register the operation for it. Giving the user a good experience.
+
+<a href="https://railsbudgetapp-3bf39d51a2ed.herokuapp.com/">Deployed Version using Heroku Services.</a>
+
+<a href="">Video talking about this project.</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,6 +65,8 @@
 - **Make use for migrations features from Active Record**
 - **Include Tables for User, Comment, Post, and Like**
 - **Use user authentification and authorizations**
+- **Deploy the project**
+- **Styling for Mobile**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,11 +174,11 @@ You can deploy this project using:
 
 - [X] **User Interface, Controllers and Models**
 - [X] **Validations**
-- [ ] **API documentation**
+- [N/A] **API documentation**
 - [X] **Model Data**
-- [ ] **Controllers Testing**
-- [ ] **Models Testing**
-- [ ] **View Implementation**
+- [X] **Controllers Testing**
+- [X] **Models Testing**
+- [X] **View Implementation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,6 +207,8 @@ If you like this project feel free to leave an start, as well if you have a sugg
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for suggestion this project.
+
+Huge thanks to <a href="https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=">Gregoire Vella on Behance</a> for his design that inspired me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

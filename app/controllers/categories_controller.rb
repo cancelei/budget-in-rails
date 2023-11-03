@@ -27,28 +27,6 @@ class CategoriesController < ApplicationController
     end
   end
 
-  # (Optional) Edit category form
-  def edit
-    @category = Category.find(params[:id])
-  end
-
-  # (Optional) Update category
-  def update
-    @category = Category.find(params[:id])
-    if @category.update(category_params)
-      redirect_to categories_path, notice: 'Category updated successfully.'
-    else
-      render :edit
-    end
-  end
-
-  # (Optional) Delete category
-  def destroy
-    @category = Category.find(params[:id])
-    @category.destroy
-    redirect_to categories_path, notice: 'Category deleted successfully.'
-  end
-
   private
 
   def category_params
