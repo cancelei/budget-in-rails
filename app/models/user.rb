@@ -1,6 +1,5 @@
 class User < ApplicationRecord
   has_many :operations
-  belongs_to :user
   has_many :categories
 
   # Include default devise modules. Others available are:
