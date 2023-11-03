@@ -15,6 +15,4 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  database: postgresql_3q2i
-  
+  url: <%= ENV['DATABASE_URL'] %> # This is the line I added
