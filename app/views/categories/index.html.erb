@@ -6,7 +6,7 @@
 
     <% @categories.each do |category| %>
       <%= link_to category_path(category) do %>
-        <div class="grid justify-between items-center border-b pb-4 mb-4">
+        <div class="flex justify-between items-center border-b pb-4 mb-4">
           <div>
             <i class="material-icons"><%= category.icon %></i>            <%= category.name %>
           </div>
