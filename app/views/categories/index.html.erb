@@ -7,14 +7,15 @@
     <% @categories.each do |category| %>
       <%= link_to category_path(category) do %>
         <div class="flex justify-between items-center border-b pb-4 mb-4">
-          <div>
+          <div  style="font-weight: 300;">
             <i class="material-icons"><%= category.icon %></i>            <%= category.name %>
           </div>
-          <span>Total: $<%= category.operations.sum(:amount) %></span>
+            <span style="font-weight: 700;">$<%= category.operations.sum(:amount) %></span>
         </div>
       <% end %>
     <% end %>
 
-    <%= link_to "Add a new category", new_category_path, class: "block w-full p-2 text-center bg-blue-600 text-white rounded-md hover:bg-blue-700 mt-4" %>
   </div>
 </div>
+<%= link_to "Add a new category", new_category_path, class: "block w-full p-2 text-center text-white rounded-md hover:bg-green-700 mt-4", style: "background-color: #5fb523;" %>
+

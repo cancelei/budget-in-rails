@@ -238,6 +238,6 @@ Huge thanks to <a href="https://www.behance.net/gallery/19759151/Snapscan-iOs-de
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
