@@ -10,8 +10,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['"Proxima Nova"', 'sans-serif'], // Default stack
+        'proxima-nova': ['"Proxima Nova"', 'sans-serif'], // Specific class for Proxima Nova if you want to keep it separate
       },
+      fontWeight: {
+        'light': 300, // Assuming 300 is the light weight for Proxima Nova
+        'bold': 700, // Assuming 700 is the bold weight for Proxima Nova
+      }
     },
   },
   plugins: [
