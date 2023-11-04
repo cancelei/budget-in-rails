@@ -1,8 +1,8 @@
 <!-- app/views/categories/new.html.erb -->
+<% content_for :title, "Add New Category" %>
 
 <div class="bg-gray-100 min-h-screen p-6">
   <div class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-    <h2 class="text-2xl font-semibold mb-6 text-center">Add New Category</h2>
     
     <%= form_with model: @category, local: true do |f| %>
       <div class="field mb-4">

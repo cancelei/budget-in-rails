@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customBlue: '#3778c2',
+      },
       fontFamily: {
         sans: ['"Proxima Nova"', 'sans-serif'], // Default stack
         'proxima-nova': ['"Proxima Nova"', 'sans-serif'], // Specific class for Proxima Nova if you want to keep it separate

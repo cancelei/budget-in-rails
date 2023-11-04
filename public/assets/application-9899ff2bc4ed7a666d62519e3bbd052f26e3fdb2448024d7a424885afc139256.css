@@ -1,5 +1,17 @@
-/* stylelint-disable csstree/validator */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+}
+
+*/
+/* stylelint-disable csstree/validator */
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,28 +24,24 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
- */
 
+
+ */
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 300;
-  src: asset-url('Fontspring-DEMO-proximanovaexcn-light.otf');
+  src: url(/Fontspring-DEMO-proximanovaexcn-light.otf);
 }
 
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 700;
-  src: asset-url('Fontspring-DEMO-proximanovacond-bold.otf');
+  src: url(/Fontspring-DEMO-proximanovacond-bold.otf);
 }
 
-// body {
-//   min-height: 100vh;
-// }
-
+/* line 37, app/assets/stylesheets/application.scss */
 html {
   font-family: 'Proxima Nova', sans-serif !important;
 }

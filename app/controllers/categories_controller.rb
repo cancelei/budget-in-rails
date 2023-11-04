@@ -4,7 +4,8 @@ class CategoriesController < ApplicationController
   before_action :verify_category_owner, only: %i[show edit update destroy]
 
   def index
-    @categories = current_user.categories.includes(:operations)
+    @categories = Category.where(user_id: current_user.id)
+    @total_amounts = Operation.where(category: @categories).group(:category_id).sum(:amount)
   end
 
   # Show individual category details along with its operations

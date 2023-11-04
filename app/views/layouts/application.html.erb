@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Budget In Rails</title>
+    <title><%= content_for?(:title) ? yield(:title) : "Default Title" %></title>
     
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -21,7 +21,8 @@
 
 <!-- app/views/layouts/application.html.erb -->
 <body>
-  <main class="container mx-auto mt-28 grid flex-col space-y-4">    
+  <main class="container mx-auto grid space-y-4">
+    <%= render 'layouts/nav' %>
     <% if flash[:notice] %>
     <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4" role="alert">
       <%= flash[:notice] %>
