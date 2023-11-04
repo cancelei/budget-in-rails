@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Feature or Component Tests', () => {
 test('Integration Test Creating new user, add category and Add transaction', async ({ page }) => {
   // Navigate to the sign-in page
   await page.goto('/users/sign_in');
@@ -20,5 +19,4 @@ test('Integration Test Creating new user, add category and Add transaction', asy
   await page.getByLabel('Name').fill('CatTestNew');
   await page.getByLabel('Icon').selectOption('food_bank');
   await page.getByRole('button', { name: 'Add Category' }).click();
-});
 });

@@ -14,7 +14,8 @@ module.exports = defineConfig({
   // ... other configurations ...
   use: {
     // Update this line with your app's hosted URL
-    baseURL: 'https://railsbudgetapp-3bf39d51a2ed.herokuapp.com/',
+    baseURL: 'https://railsbudgetapp-3bf39d51a2ed.herokuapp.com/', // Your app's hosted URL
+    headless: true, // Run tests in headless mode
     // ... other settings
   },
 
@@ -23,21 +24,21 @@ module.exports = defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        headless: false, // Add this line to run in headful mode
+        headless: true, // Add this line to run in headful mode
       },
     },
     {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        headless: false, // Add this line to run in headful mode
+        headless: true, // Add this line to run in headful mode
       },
     },
     {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        headless: false, // Add this line to run in headful mode
+        headless: true, // Add this line to run in headful mode
       },
     },
     // ... other projects ...
