@@ -34,6 +34,7 @@ group :development, :test do
   gem 'faker'
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 5.0.0'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
@@ -42,6 +43,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner-active_record'
   gem 'selenium-webdriver'
 end
 

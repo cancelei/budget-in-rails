@@ -18,7 +18,9 @@
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.10"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cancelei/budget-in-rails.git"

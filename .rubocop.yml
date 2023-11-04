@@ -41,6 +41,9 @@ Style/DefWithParentheses:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
