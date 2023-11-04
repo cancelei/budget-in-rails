@@ -1,0 +1,20 @@
+<div class="bg-gray-100 min-h-screen p-6">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Operations for <%= @category.name %></h2>
+    <p class="text-xl text-center mb-4">Total Amount: <%= @total_amount %></p>
+
+    <ul>
+      <% @operations.each do |operation| %>
+        <li class="border-b py-2 flex justify-between">
+          <span><%= operation.name %></span>
+          <span><%= operation.amount %></span>
+        </li>
+      <% end %>
+    </ul>
+
+    <div class="mt-6">
+      <%= link_to "Add New Operation", new_category_operation_path(@category), class: "block w-full text-center bg-blue-500 text-white rounded py-2 hover:bg-blue-600" %>
+      <%= link_to "Back", categories_path, class: "block w-full text-center bg-gray-300 mt-4 rounded py-2 hover:bg-gray-400" %>
+    </div>
+  </div>
+</div>
