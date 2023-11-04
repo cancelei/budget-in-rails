@@ -4,5 +4,4 @@ FactoryBot.define do
     icon { 'Sample Icon' }
     user
   end
-
 end

@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  has_many :operations
+  has_many :operations, dependent: :destroy
   belongs_to :user
 
   validates :name, presence: true
