@@ -36,7 +36,7 @@
 
 <a href="https://railsbudgetapp-3bf39d51a2ed.herokuapp.com/">Deployed Version using Heroku Services.</a>
 
-<a href="">Video talking about this project.</a>
+<a href="https://www.youtube.com/watch?v=_VL_r-UiWAU">Video talking about this project.</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
