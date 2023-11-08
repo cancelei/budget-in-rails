@@ -1,5 +1,6 @@
 # Ignore bundler config.
 /.bundle
+node_modules/
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -25,3 +26,7 @@
 
 .byebug_history
 .env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
